@@ -14,21 +14,15 @@ body {
   padding: 0;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,156,217,1) 0%, rgba(5,63,142,1) 100%);
-  background-size: cover;
-  /* background-image: url(../IMCGuy.png);
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: right 435px; */
-  /* background-image: url(../Corredor.png);
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: left 435px; */
+  background-image: cover;
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
-}
+} 
 
 .container {
+  position: relative;
+  text-align: center;
   max-width: 640px;
   margin: 50px auto;
   background: #fff;
@@ -37,7 +31,15 @@ body {
   box-shadow: 0 15px 10px rgb(0 0 0 / 0.2);
 }
 
+.bg{
+  margin-top: -100%;
+  margin-left: 80%;
+  position: relative;
+}
+
+
 .container h1 {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-left: auto;
   margin-top: 5%;
@@ -58,6 +60,7 @@ body {
 }  
 
 form input, form label, form button {
+  text-align: center;
   display: block;
   width: 100%;
   margin-bottom: 10px;
