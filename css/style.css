@@ -10,6 +10,7 @@
 }
 
 body {
+  align-content: center;
   margin: 0;
   padding: 0;
   background: rgb(2,0,36);
@@ -32,6 +33,7 @@ body {
 }
 
 .bg{
+  align-content: center;
   margin-top: -100%;
   margin-left: 80%;
   position: relative;
