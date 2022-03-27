@@ -2,6 +2,10 @@
 <html lang="pt-BR">
 
 <head>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,15 +38,13 @@
         </div>
 
         <h2> Calcule seu IMC</h2>
-
-        <!-- <img class="Corredor" src="Corredor.png"> -->
     
 
         <form action="/" id="formulario" method="POST">
             <label for="peso">Peso em Kg</label>
-            <input type="text" id="peso" name="peso">
+            <input type="text" id="peso" name="peso" required autocomplete="off">
             <label for="altura">Altura em M (Exemplo: 1.70 - Utilizar PONTO)</label>
-            <input type="text" id="altura" name="altura">
+            <input type="text" id="altura" name="altura" required autocomplete="off">
             <button class="submit" type="submit">Enviar</button>
         </form>
 
@@ -59,9 +61,13 @@
 
         </p>
     </section>
-    <script src="path/to/particles.min.js"></script>
-    <canvas class="background"></canvas>
     <script src="./js/main.js"></script>
 </body>
+
+<div>
+    <a>
+       <img src="IMCGuy.png" class="bg" alt="Doctor" width="300px">
+    </a>
+</div>
 
 </html>
