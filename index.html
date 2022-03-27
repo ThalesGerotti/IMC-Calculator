@@ -8,7 +8,7 @@
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -41,33 +41,27 @@
     
 
         <form action="/" id="formulario" method="POST">
-            <label for="peso">Peso em Kg</label>
-            <input type="text" id="peso" name="peso" required autocomplete="off">
-            <label for="altura">Altura em M (Exemplo: 1.70 - Utilizar PONTO)</label>
-            <input type="text" id="altura" name="altura" required autocomplete="off">
+            <label for="peso"></label>
+            <input type="number" id="peso" name="peso" required autocomplete="off" value="" size="35" onkeydown="" placeholder="Peso (kg)" min="0" step="any">
+            <label for="altura"></label>
+            <input type="number" id="altura" name="altura" required autocomplete="off" value="" size="35" onkeydown="" placeholder="Altura (m)" min="0" step="any">
             <button class="submit" type="submit">Enviar</button>
         </form>
 
         <div id="resultado"></div>
 
 
-
-
-
-
-
-
-
-
         </p>
     </section>
+
     <script src="./js/main.js"></script>
+
 </body>
 
-<div>
+<footer>
     <a>
        <img src="IMCGuy.png" class="bg" alt="Doctor" width="300px">
     </a>
-</div>
+</footer>
 
 </html>
